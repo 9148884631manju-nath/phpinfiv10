@@ -1,0 +1,40 @@
+[
+ {
+  "inblock":
+  [
+   {
+    "xrequire":"temp/sample.php"
+   },
+   {
+    "swichcase":{
+     "val":"$dfor",
+     "api":[
+      {
+       "content":"{\"$name\":\"$mobile\"}"
+      }
+     ],
+     "html":[
+      {
+       "content":"<h2>$name</h2><h4>$mobile</h4>"
+      }
+     ],
+     "Evening":[
+      {
+       "content":"You are in Evening "
+      }
+     ],
+     "nil":[
+      {
+       "content":"{\"data\":\"nil\"}"
+      }
+     ]
+    }
+   }
+  ],
+  "keys":[
+   ["request","dfor","$dfor","",""],
+   ["request","name","$name","Default Name",""],
+   ["request","mobile","$mobile","0000000000",""]
+  ]
+ }
+]

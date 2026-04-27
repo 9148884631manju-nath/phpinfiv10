@@ -1,0 +1,24 @@
+[
+	{
+		"block":"root",
+		"css":{
+		   "file":"webres.json",
+		   "default":{
+				".themes":"24:flex,87:center,82:Center,57:wrap,1:10",
+				".themes .col":"3:15px,24:flex,82:center,87:center"
+		   },
+		   "auto":{
+			  "800px":{
+			  }
+		   },
+		   "animation":{
+		   }
+		},
+		"webres":"webres.json",
+		"class":"themes",
+		"webtheme":{
+			"webres":"webres.json",
+			"root":"root.json"
+		}
+	}
+]

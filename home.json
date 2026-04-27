@@ -1,0 +1,21 @@
+[
+    {
+     "webres":"webres.json",
+					"block":"root",
+					"require":"tracker.php",
+					"inblock":
+      [
+       {
+										"block":"APP/PGX"
+							}
+					],
+"keys":
+			[
+				["request","app","APP","web",""],
+				["request","content","PGX","welcome",""],
+				["date","Y-m-d H:i:s","$mydate","0","days"],
+				["encrequest","person","$encrequest","Default Enc Request",""],
+				["decrequest","decperson","$decrequest","Default dec Request",""]
+			]
+    }
+]

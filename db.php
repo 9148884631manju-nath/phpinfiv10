@@ -1,0 +1,1 @@
+<?php $php10 = new php10(); foreach($_POST as $k=>$v){$$k=$v;}foreach($_REQUEST as $k=>$v){$$k=$v;} if(isset($db)){$db=$db;}else{$db="db";} $con = $php10->con("dbcon.json",$db); $ccon = $php10->con("dbcon.json","counterdb");  ?>

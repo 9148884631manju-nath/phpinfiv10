@@ -1,0 +1,1 @@
+<?php require_once "lib/phpinfi10.php"; foreach($_POST as $k=>$v){$$k=$v;} foreach($_REQUEST as $k=>$v){$$k=$v;} $appconfig="lib/appconfig.json"; $page=(isset($page)=="")?"home":$page; $content=(isset($content)=="")?"home":$content; $php10 = new php10(); $php10->decl($appconfig,$content); echo $php10->web($page); ?><script src="lib/jcs.js"></script>

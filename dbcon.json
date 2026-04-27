@@ -1,0 +1,25 @@
+[
+ 	{
+		"db":
+			{
+				"server":"127.0.0.1",
+				"username":"root",
+				"password":"srushti!@#123",
+				"database":"newsrs"	
+			},
+		"offdb":
+			{
+				"server":"127.0.0.1",
+				"username":"root",
+				"password":"srushti!@#123",
+				"database":"srs_counter"	
+			},
+		"counterdb":
+			{
+				"server":"127.0.0.1",
+				"username":"root",
+				"password":"srushti!@#123",
+				"database":"srs_counter"	
+			}
+	}
+]

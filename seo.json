@@ -1,0 +1,139 @@
+[
+ 	{
+		"title":
+			{
+				"home":"Welcome to PHP10 Web Framework",
+				"magazine/login":"SRS Matha Audio Book Login",
+				"counter/welcome":"SRS Matha COUNTER"
+			},
+		"meta":
+			{
+				
+				"rooms":[
+				],
+				"webtheme":[
+					{}
+				],
+				"web/cpanel":[
+
+				],
+				"magazine/welcome":[
+
+				],
+				"counter/welcome":[
+					{
+						"name":"keyword",
+						"content":"SRS Matha, Counter"
+					},
+					{
+						"name":"description",
+						"content":"SRS Matha Counter"
+					}
+				],
+				"magazine/login":[
+					{
+						"name":"keyword",
+						"content":"SRS Matha, Audio Book, Music App"
+					},
+					{
+						"name":"description",
+						"content":"SRS Matha Audio Book App"
+					}
+				],
+				"home":[
+					{
+						"name":"keyword",
+						"content":"Default Website"
+					}
+				],
+				"opt/welcome":[
+					{
+						"name":"keyword",
+						"content":"Admin Control Panel"
+					}
+				],
+				"all":
+					[
+					 	{
+							"name":"viewport",
+							"content":"width=device-width, initial-scale=1.0, viewport-fit=contain"
+						},
+						{
+							"name":"keyword",
+							"content":" "
+						},
+						{
+							"name":"apple-mobile-web-app-title",
+							"content":" "
+						},
+						{
+							"property":"og:url",
+							"content":" "
+						},
+						{
+							"property":"og:description",
+							"content":" "
+						},
+						{
+							"property":"og:title",
+							"content":" "
+						},
+						{
+							"propery":"og:image",
+							"content":"images/logo.png"
+						},
+						{
+							"property":"og:type",
+							"content":" "
+						},
+						{
+							"name":"application-name",
+							"content":" "
+						},
+						{
+							"name":"msapplication-TileColor",
+							"content":"#7938c8"
+						},
+						{
+							"name":"msapplication-TileImage",
+							"content":"images/logo.png"
+						},
+						{
+							"name":"msapplication-config",
+							"content":" "
+						},
+						{
+							"name":"theme-color",
+							"content":"#7938c8"
+						},
+						{
+							"name":"critical-include",
+							"content":""
+						},
+						{
+							"http-equiv":"cache-control",
+							"content":"no-cache"
+						},
+						{
+							"http-equiv":"expires",
+							"content":"0"
+						},
+						{
+							"http-equiv":"pragma",
+							"content":"no-cache"
+						}
+					]
+			},
+		"link": 
+			{
+				"all":
+					[
+						{
+							"rel": "icon",
+							"href": "images/favicon.png",
+							"class": "js-favicon"
+						}
+					]
+			}
+	}
+]

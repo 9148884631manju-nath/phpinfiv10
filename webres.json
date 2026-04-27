@@ -1,0 +1,85 @@
+[
+    {
+        "fonts":
+			[
+				{
+					"family":"Roboto Condensed Light",
+					"source":"fonts/RobotoCondensed-Light.ttf",
+					"format":"ttf",
+					"unicode":""
+				},
+				{
+					"family":"Roboto Condensed",
+					"source":"fonts/RobotoCondensed-Regular.ttf",
+					"format":"ttf",
+					"unicode":""
+				},
+				{
+					"family":"Roboto Condensed Thin",
+					"source":"fonts/RobotoCondensed-Thin.ttf",
+					"format":"ttf",
+					"unicode":""
+				},
+				{
+					"family":"Source Sans Pro",
+					"source":"fonts/SourceSansPro-Regular.ttf",
+					"format":"ttf",
+					"unicode":""
+				},
+				{
+					"family":"Nunito Sans Normal ExtraLight",
+					"source":"fonts/NunitoSans-VariableFont.ttf",
+					"format":"ttf",
+					"unicode":""
+				},
+				{
+					"family":"Onest Thin",
+					"source":"fonts/Onest-VariableFont_wght.ttf",
+					"format":"ttf",
+					"unicode":""
+				},
+				{
+					"family":"GeoSlab703 XBd BT",
+					"source":"fonts/GEO703XB.ttf",
+					"format":"ttf",
+					"unicode":""
+				}
+			],
+		"f":[
+				"Onest Thin",
+				"Nunito Sans Normal ExtraLight",
+				"Roboto Condensed",
+				"Roboto Condensed Light",
+				"Roboto Condensed Thin",
+				"Source Sans Pro",
+				"GeoSlab703 XBd BT"
+			],
+		"c":[
+				"#ffffff", "#f2f2f2", "#e5e5e5", "#d7d7d7", 
+				"#c5c5c5", "#afafaf", "#939393", "#767676", 
+				"#616161", "#444444", "#2f2f2f", "#1d1d1d", 
+				"#101010", "#000000", "#f4d6d6", "#eec0c0", "#e7a3a3", 
+				"#de8080", "#d25353", "#bb3030", "#ffcbcb", 
+				"#ffafaf", "#ff8b8b", "#ff5f5f", "#ff2626", 
+				"#eb0000", "#c20000", "#cee1d1", "#b7d3bb", 
+				"#9cc3a2", "#79ae81", "#599362", "#497951", 
+				"#c4eaca", "#a9e1b1", "#88d694", "#5ec86e", 
+				"#3cb04e", "#319141", "#afffbb", "#8bff9b", 
+				"#5fff77", "#27ff47", "#00ec25", "#00c221", 
+				"#ced7e1", "#b7c4d3", "#9cafc3", "#7992ae", 
+				"#597593", "#496079", "#c4d6ea", "#a9c3e1", 
+				"#88aed6", "#5e90c8", "#3c74b0", "#315f91", 
+				"#afd5ff", "#8bc0ff", "#5facff", "#278cff", 
+				"#0071ec", "#005cc2", "#e1cee1", "#d3b7d3", 
+				"#c39cc3", "#ae79ae", "#935993", "#794979", 
+				"#eac4ea", "#e1a9e1", "#d688d6", "#c85ec8", 
+				"#b03cb0", "#913191", "#ffafff", "#ff8bff", 
+				"#ff5ffe", "#ff27fe", "#ec00eb", "#c200c1", 
+				"#f5e9b9", "#f1e09a", "#ebd373", "#e4c442", 
+				"#cfac1e", "#aa8e19", "#FDA15A", "#FB7B42", 
+				"#E33F36", "#B93344", "#731F46", "#4E164B",
+				"#F6E0B9", "#E4AF75", "#D09156", "#C86A2C",
+				"#8C4624", "#612612", "#FFCC00", "#FFDE00"
+			]
+    }
+]

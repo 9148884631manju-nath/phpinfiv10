@@ -1,0 +1,80 @@
+<?php
+$name=$param->name;
+$email=$param->email;
+$mobile=$param->mobile;
+$sms_message=$param->sms_message;
+$email_subject=$param->email_subject;
+$email_body=$param->email_body;
+$watsapp_message=$param->watsapp_message;
+$view_arrays=$param->view_arrays;
+$run_email=$param->run_email;
+$run_watsapp=$param->run_watsapp;
+$run_sms=$param->run_sms;
+$sms_url="http://promo.srushti.in/smsstatuswithid.aspx";
+$email_url="https://srsmatha.net/emailapi.php";
+$strUserName="6361602944";
+$strPassword="6361602944";
+$strSenderId="SRIMTH";
+$skey="766493665a4c44b6af8c5ce7d927ee3a";
+$watsapp_url="https://whatsapp.smsidea.com/api/v1/sendMessage";
+
+$php10 = new php10(); $php10->decl($appconfig,$content);
+//----------------------------------------------------------------------------------
+//SMS - API
+
+$strMobile=$mobile;
+$strMessage=$sms_message;
+$sfields = array(
+	'mobile' => $strUserName,
+	'pass' => $strPassword,
+	'senderid' => $strSenderId,
+	'to' => $strMobile,
+	'msg' => $strMessage
+	);
+$fr="";
+if($run_sms=="yes"){
+    echo "SMS - ".cur($sms_url,$sfields,$fr);
+}else{}
+
+//----------------------------------------------------------------------------------
+//EMAIL - API
+
+$efields = array(
+    'name' => $name,
+    'peamil' => $email,
+    'pmobile' => $mobile,
+    'subject' => $email_subject,
+    'emailbody' => $email_body
+    );
+$xfr="";
+if($run_email=="yes"){
+    echo "Email - ".cur($email_url,$efields,$xfr);
+}else{}
+
+//----------------------------------------------------------------------------------
+//WATSAPP - API
+$chkmob = $mobile[0];
+if($chkmob=="0"){$mobile= substr($mobile,1);}else{$mobile=$mobile;}
+$sto="91".$mobile;
+$sisurgent="True";
+$wfields = array(
+    'key' => $skey,
+    'to' => $sto,
+    'IsUrgent' => $sisurgent,
+    'message' => $watsapp_message
+    );
+if($run_watsapp=="yes"){
+    $sresx = "Watsapp - ".cur($watsapp_url,$wfields,"");
+    echo $sresx;
+}else{}
+
+//----------------------------------------------------------------------------------
+if($view_arrays=="yes"){
+    echo "<hr/>SMS<br/>";
+    var_dump($sfields);
+    echo "<hr/>EMAIL<br/>";
+    var_dump($efields);
+    echo "<hr/>WATSAPP<br/>";
+    var_dump($wfields);
+}
+?>

@@ -1,0 +1,85 @@
+[
+ {
+  "css":{
+     "file":"webres.json",
+     "default":{
+      "body, html":"24:flex,82:center,87:center,18:100vh,17:100vw,84:break-word,97:1000px",
+      ".welcome":"5:relative,3:25px,10:10px,lgrad:45deg|3/1/0/2/0/3,28:0px 0px 15px 4,2:2px solid 0,4:20px,34:0.5s,104:preserve-3d",
+      ".welcome .logo":"3:25px",
+      ".btns, .pbtns":"24:flex,82:center,57:wrap,3:15px 0px 0px 0px,12:85%",
+      ".btns .btn":"27:pointer,lgrad:0deg|9/7,1:0,42:bold,3:10px 19px,10:13px,4:3px,2:2px solid 9",
+      ".btns .btn:hover":"2:2px solid 0,28:0px 0px 8px 8",
+      ".pbtns .btn":"27:pointer,1:9,42:bold,3:10px,10:0px,4:3px 8px 0px 0px,2:1px solid 4,10:3px",
+      ".pbtns .btn:hover":"2:1px solid 8",
+      ".logo h1":"27:pointer",
+      ".layerOne":"5:relative,47:1",
+      ".layerTwo":"5:absolute,0:55,1:0,24:flex,82:center,87:Center,13:Center,6:0px,7:0px,17:100%,18:100%,98:100px,29:translateZ(-30px) rotateX(-180deg),85:column",
+      ".layerTwo h5":"27:pointer,2:2px solid 0,3:7px 15px"
+     },
+     "auto":{
+        "700px":{
+         ".btn":"89:1"
+        }
+     },
+     "animation":{
+      "rotation":{
+         "0%":"29:rotateX(0deg),17:auto,18:auto",
+         "100%":"29:rotateX(180deg),17:50%,18:50%"
+      },
+      "rotation_reverse":{
+         "0%":"29:rotateX(180deg),17:50%,18:50%",
+         "100%":"29:rotateX(0deg),17:auto,18:auto"
+      }
+     }
+  },
+  "class":"welcome",
+  "inblock":
+  [
+   {
+      "class":"layerTwo",
+      "inblock":
+      [
+         {
+            "content":"<h1>About INFI Framework</h1><br/><h3>Saves significant bandwidth and allows <br/>for fast server-side or client-side injection.</h3><br/><br/><h5>Proceed</h5>"
+         }
+      ]
+   },
+   {
+      "class":"layerOne",
+      "inblock":
+      [
+         {
+         "class":"logo",
+         "content":"<h1>PHP-INFI</h1><hr/><h4>A Unique Web Application Development</h4>"
+         },
+         {
+         "class":"pbtns",
+         "varblock":{
+         "data":[
+            ["1","Layouts","9343945143"],
+            ["2","Elements","9148884631"],
+            ["3","Keys","0021547855"],
+            ["3","Forms","0021547855"],
+            ["3","Tutorial","0021547855"]
+         ],
+         "vars":["SLN","TIT","CON"],
+         "theme":[
+            {
+            "class":"btn","content":"TIT","attr":{"onclick":"window.location='?page=TIT/welcome'"}
+            }
+         ]
+         }
+         }
+      ]
+   }
+  ],
+  "injs":{
+   "inscript":{
+      "0":"$('.logo h1').click(function(){ vf('.welcome',{74:'rotation',75:'1s',76:1,101:'forwards'}); });",
+      "1":"$('.layerTwo h5').click(function(){ vf('.welcome',{74:'rotation_reverse',75:'1s',76:1,101:'forwards'}); });"
+   },
+   "sources":[
+   ]
+  }
+ }
+]
