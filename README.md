@@ -28,3 +28,12 @@ by K. Manjunath, Code Designer
 1. **Download**
 ```bash
 git clone https://github.com/9148884631manju-nath/phpinfiv10.git
+
+
+License
+All Rights Reserved © 2023 Manjunath K
+
+Contact
+K. Manjunath
+Email: manju9343945143@gmail.com
+Phone: 9343945143
