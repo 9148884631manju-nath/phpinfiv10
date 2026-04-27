@@ -1,0 +1,11 @@
+[
+	{
+		"appfolder":"phpinfi10/",
+		"default_time_zone":"Asia/Calcutta",
+		"extension":".json",
+		"appname":"PHP-INFI Framework",
+		"appver":"V10",
+		"secret_key":"THISMANJUSHEKARFORSRUSHTIWITHKUMARANDKIRAN12345!@#*()&",		
+		"secret_iv":"WEHAVENOTLOADEDYETFORTHISMOMENTTOOVERIDETHISONE"
+	}
+]

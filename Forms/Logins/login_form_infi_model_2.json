@@ -1,0 +1,150 @@
+[
+ {
+  "inblock":
+  [
+   {
+    "swichcase":{
+     "val":"$type",
+     "logincode":[
+      {
+       "inblock":
+       [
+        {
+         "ifelse":
+          {
+             "type":"value_check",
+             "valchk":
+                {
+                   "username":"$username",
+                   "password":"$password"
+                },
+             "class":".",
+             "valid_number":["",""],
+             "valid_type":["",""],
+             "valid_length":["",""],
+             "ercol":"25",
+             "nocol":"7",
+             "yes":
+                [
+                   {
+                      "ifelse":{
+                       "type":"inblock_display",
+                       "val":"$username$password",
+                       "myval":"user1234",
+                       "yes":[
+                       {
+                        "content":"Login Success!"
+                       }
+                       ],
+                       "no":[{
+                        "content":"Invalid Username or Password!"
+                       }]
+                      }
+                   }
+                ]
+          }
+        }
+       ],
+       "keys":[
+        ["post","username","$username","",""],
+        ["post","password","$password","",""]
+       ]
+      }
+     ],
+     "Afternoon":[
+      {
+       "content":"Lets this is time 12:00 PM"
+      }
+     ],
+     "Evening":[
+      {
+       "content":"You are in Evening "
+      }
+     ],
+     "nil":[
+      {
+       "webres":"webres.json",
+       "css":{
+          "file":"webres.json",
+          "default":{
+           "h1,h2,h3,h4,h5,p":"3:0px,4:0px,5;relative",
+           ".formframe":"11:5,5:relative,lgrad:45deg|3/0/1/0/2,3:0px,84:break-word,10:8px,28:0px 0px 25px 4,2:2px solid 6",
+           ".frmfld":"5:relative,24:flex,82:center,57:wrap,3:15px 0px",
+           ".frmfld .fld":"5:relative,24:flex,82:center,3:7px,89:1",
+           ".frmfld .fld .tit":"5:relative,3:0px 8px,17:30%,13:right",
+           ".frmfld .fld .inp":"5:relative,24:flex,82:Center,89:1",
+           ".frmfld .fld .inp input":"89:1,0:0,2:1px solid 7,10:7px,3:10px 15px",
+           ".fbtns":"5:relative,24:flex,82:center,57:wrap",
+           ".fbtns .btn":"27:pointer,3:10px 15px,10:5px,lgrad:0deg|10/7,1:0,42:bold",
+           ".fres":"3:15px 0px 0px 0px,",
+           "form":"5:relative,24:flex,87:center,57:wrap",
+           ".ftilte":"lgrad:45deg|7/9,1:0,24:flex,82:center,87:center,89:1",
+           ".rfor":"5:relative,3:25px 25px,17:50%,21:0px solid 5"
+          },
+          "auto":{
+             "800px":{
+             }
+          },
+          "animation":{
+          }
+       },
+       "class":"formframe",
+       "form":{
+        "class":"lform",
+        "name":"lform",
+        "enctype":"multipart/data-format",
+        "method":"post",
+        "action":"?page=keys/form",
+        "theme":[
+         {
+          "class":"ftilte",
+          "content":"<h1>Login Form</h1>"
+         },
+         {
+          "class":"rfor",
+          "inblock":
+          [
+           {
+            "class":"frmfld",
+            "varblock":{
+                "data":
+                [
+                    ["text", "username", "username", "User Name", "User Name", ""," ","inp"],
+                    ["password", "password", "password", "Password", "Password", ""," ","inp"]
+                ],
+                "vars": ["TYP", "CL", "NM", "TIT", "PH", "VL", "EX","INC","FCS"],
+                "defs": ["", "", "", "defs", "", "", "","",""],
+                "theme": "lib/formfields.json"
+                }
+           },
+           {
+            "class":"fbtns",
+            "inblock":
+            [
+             {
+              "class":"btn cartpay",
+              "content":"Login",
+              "attr":{
+               "cartpay":".lform|code.php?page=Forms/Logins/login_form_infi_model_1&type=logincode|.fres b|Getting Credentials..."
+              }
+             }
+            ]
+           },
+           {
+            "class":"fres",
+            "content":"<h4>user 1234</h4><b>Login Report Here...</b>"
+           }
+          ]
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  ],
+  "keys":[
+   ["request","type","$type","",""]
+  ]
+ }
+]

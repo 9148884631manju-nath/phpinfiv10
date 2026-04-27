@@ -1,0 +1,249 @@
+[{
+    "class": "fld FCS",
+    "content": "<b class='tit'>TIT</b>",
+    "swichcase": {
+        "val": "TYP",
+        "text": [{
+            "class": "INC",
+            "input": {
+                "type": "TYP",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		"captcha":[
+			{
+				"input": {
+					"type": "hidden",
+					"class": "inpv verifyCL",
+					"name": "verifyNM"
+				}
+			},
+			{
+				"class": "INC",
+				"input": {
+					"type": "TYP",
+					"placeholder": "PH",
+					"class": "inpv CL",
+					"value": "VL",
+					"name": "NM",
+					"EX": ""
+				},
+				"injs":{
+                                "inscript":{
+                                	"0":"function grnd(mx,mn){var rnd = rand(mx,mn);$('.verifyCL').val(rnd);$('.FCS b').html('');$('.FCS b').append(\"PH <i>\"+rnd+\"</i> <span onclick='grnd(9999,1111)'>Reload</span>\");$('CPSinp').val(rnd); vf('.FCS b',{1:'var(--9)'});vf('.FCS b span',{2:'1px solid var(--3)',27:'pointer',3:'2px 10px',4:1,10:'10px'});}",
+					"1":"",
+					"2":"grnd(9999,1111);"
+                                },
+                                "sources":[
+                                
+                                ]
+                                }
+			}
+		],
+		"password": [{
+            "class": "INC",
+            "input": {
+                "type": "password",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		"stext": [{
+            "class": "INC stext",
+            "content":"VL"
+        }],
+		"multisel": [{
+            "class": "INC",
+            "input": {
+                "type": "text",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": "",
+				"multisel":"MUSL",
+				"fifo":"INFIF"
+			}
+        }],
+		 "date": [{
+            "class": "INC",
+            "input": {
+                "type": "TYP",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		 "number": [{
+            "class": "INC",
+            "input": {
+                "type": "TYP",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		 "time": [{
+            "class": "INC",
+            "input": {
+                "type": "TYP",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		"bulkimages":[
+			{
+				"class":"INC blkimgs",
+				"bulkimages":
+					{
+						"type":"db_content_comma",
+						"content":"VL",
+						"divider":",",
+						"vals":["name"],
+						"theme":
+							[
+								{
+									"class":"imgs",
+									"inblock":
+										[
+											{
+												"image":
+													{
+														"osrc":"name",
+														"height":"90"
+													}
+											},
+											{
+												"class":"fdelimg",
+												"content":"X",
+												"attr":
+													{
+														"fdelimg":"name",
+														"fid":"EX"
+													}
+											}
+										]								
+								}
+							]
+					}
+			}
+		],
+		"image": [{
+            "class": "INC",
+			"input": {
+                "type": "hidden",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            },
+			"image": {
+                "osrc": "VL",
+				"height":"50"
+            }
+        }],
+		 "checkbox": [{
+            "class": "INC",
+            "input": {
+                "type": "TYP",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		"radio": [{
+            "class": "INC",
+            "input": {
+                "type": "TYP",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+        "button": [{
+            "class": "INC",
+            "input": {
+                "type": "button",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+        "file": [{
+            "class": "INC",
+            "input": {
+                "type": "TYP",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		"editfile": [{
+            "class": "INC",
+            "input": {
+                "type": "file",
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "name": "NM",
+                "EX": ""
+            }
+        },{
+			"input": {
+                "type": "hidden",
+                "placeholder": "PH",
+                "class": "inpv UP_CL",
+                "value": "VL",
+                "name": "UP_NM",
+                "EX": ""
+            },
+			"image":{
+                "src": "VL",
+				"height":"50",
+				"width":"60"
+            	}
+			}],
+        "textarea": [{
+			"class": "INC",
+            "textarea": {
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+		"emptextarea": [{
+			"class": "INC",
+            "textarea": {
+                "placeholder": "PH",
+                "class": "inpv CL",
+                "value": "VL",
+                "name": "NM",
+                "EX": ""
+            }
+        }],
+        "nill": []
+    }
+}]

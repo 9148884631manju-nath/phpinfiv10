@@ -1,0 +1,21 @@
+[
+    {
+        "css":{
+           "file":"webres.json",
+           "root":{
+           },
+           "rootcol":{
+           },
+           "rootfon":{
+           },
+           "default":{
+           },
+           "auto":{
+              "800px":{
+              }
+           },
+           "animation":{
+           }
+        }
+    }
+]

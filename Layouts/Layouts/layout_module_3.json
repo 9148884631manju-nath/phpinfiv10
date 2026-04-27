@@ -1,0 +1,64 @@
+[
+ {
+  "inblock":
+  [
+   {
+    "css":{
+       "file":"webres.json",
+       "default":{
+        "h1,h2,h3,h4,h5,h6,p":"3:0px,4:0px",
+        ".layout":"5:relative,24:flex,87:space-between,57:wrap,3:0px,4:5px,lgrad:45deg|2/3,10:25px,3:5%",
+        ".layout .l-sm-head":"3:25px 0px",
+        ".layout .l-btns":"5:relative,24:flex,82:center",
+        ".layout .l-btns .btn":"27:pointer,3:12px 18px,lgrad:0deg|9/7,1:0,42:bold,10:35px,4:0px 10px 0px 0px",
+        ".layout .f-graph":"5:relative,18:100px,17:100px,",
+        ".layout .f-graph .graph-bg":"5:absolute,6:5%,7:5%,17:90%,18:90%,10:50%,0:0,47:2,24:flex,82:Center,87:Center,12:65%",
+        ".layout .f-graph .circle":"47:1,5:absolute,6:0px,7:0px,17:100%,18:100%,10:50%,congrad:transparent 0deg/transparent 210deg/10 210deg",
+        ".layout .r-text":"3:15px 0px"
+       },
+       "auto":{
+          "800px":{
+          }
+       },
+       "animation":{
+       }
+    },
+    "class":"layout",
+    "inblock":
+    [
+     {
+      "class":"l-left",
+      "inblock":
+      [
+       {
+        "class":"l-head",
+        "content":"<h1>Upcoming Events Coming Soon</h1>"
+       },
+       {
+        "class":"l-sm-head",
+        "content":"<h4>Art Class, Bangalore</h4>"
+       },
+       {
+        "class":"l-btns",
+        "inblock":
+        [
+         {
+          "class":"btn",
+          "content":"Register Now"
+         },
+         {
+          "class":"btn",
+          "content":"Login Now"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "keys":[
+   
+  ]
+ }
+]

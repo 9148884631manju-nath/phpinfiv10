@@ -1,0 +1,122 @@
+[
+	{
+		"inblock":[
+			{
+				"swichcase":{
+					"val":"PGX",
+					"nil":[],
+					"rooms":[
+					],
+					"home":[
+						{
+							"css":{
+								"file":"webres.json",
+								"default":{
+									".welcometext":"varcol:var(--6),24:flex,82:center,87:center,85:column,18:90vh,3:2% 0%,5:relative,16:hidden,varbg:var(--1),27:pointer",
+									".welcometext .maintex":"53:1px 1px 2px var/(--10),12:120%,5:relative,47:2,varbg:var(--6),3:25px 40px,10:50px,varcol:var(--9),13:center,51:220%",
+									".welcometext .mbg":"5:absolute,6:0px,7:0px,17:100%,47:1,18:105%,varlgrad:180deg|var(--9)/var(--6),",
+									".welcometext .mbg img":"17:20%,18:100%,55:cover,43:0.2",
+									".welcometext .homelogo":"5:relative,47:2,24:flex,82:center,87:center",
+									".welcometext .homelogo img":",18:380px",
+									".welcometext .randoms":"5:absolute,6:0px,7:0px,17:100%,18:100%,47:3",
+									".welcometext .randoms .img":"5:absolute,6:0%,7:-102%,17:200px",
+									".welcometext .randoms .img img":"17:100%"
+								},
+								"animation":{
+									"fallin":{
+										"0%":"7:-100%",
+										"100%":"7:100%"
+									},
+									"grad":{
+									}
+								},
+								"auto":{
+									"520px":{
+										".welcometext":"12:75%,3:2% 5%",
+										".welcometext .homelogo img":"17:65vw,18:auto"
+									}
+								}
+							},
+							"class":"welcometext",
+							"attr":{
+								"onclick":""
+							},
+							"inblock":[
+								{
+									"class":"randoms",
+									"scatter":{
+										"type":"random",
+										"count":"25",
+										"theme":[
+											{
+												"class":"img",
+												"image":{
+													"src":"images/flower1.png"
+												}
+											},
+											{
+												"class":"img",
+												"image":{
+													"src":"images/flower7.png"
+												}
+											},
+											{
+												"class":"img",
+												"xcontent":":*:",
+												"image":{
+													"src":"images/flower2.png"
+												}
+											},
+											{
+												"class":"img",
+												"image":{
+													"src":"images/flower6.png"
+												}
+											},
+											{
+												"class":"img",
+												"image":{
+													"src":"images/flower4.png"
+												}
+											}
+										]
+									},
+									"injs":{
+										"inscript":{
+											"0":"function emp(){}function flower(){ranxw = $('.randoms').width(); ranxh = $('.randoms').height();imglen = $('.randoms img').length;for(i=0;i<imglen;i+=1){ran = Math.floor(Math.random()*imglen);ranw = Math.random()*ranxw; ranh = Math.floor(Math.random()*imglen); el=$('.randoms img').eq(i);$(el).animate({left:(ranw+i)+'px',top:(ranh*(i/2))+'%',transform:'skew('+ranw*i+'deg)'},80*ranh+ranw);}}",
+											"1":"",
+											"2":"function flowerb(){ranxw = $('.randoms').width(); ranxh = $('.randoms').height();imglen = $('.randoms .img').length;for(i=0;i<imglen;i+=1){ rimg = Math.floor(Math.random()*imglen); imgel=$('.randoms .img').eq(rimg); ranw=Math.random()*ranxw; ranh=(Math.random()*ranxh); vf(imgel,{6:ranw+'px'}); vfa(imgel,{17:ranh/15+'px',12:ranh/15+'px',7:ranh+'px'},5000*Math.random(),emp); }}",
+											"3":"flowerb();",
+											"4":"function animflo(){vfa('.randoms .img',{7:'90%'},5000,emp);}"
+										},
+										"scripts":{
+										}
+									}
+								},
+								{
+									"class":"homelogo",
+									"image":{
+										"src":"images/swamy.png"
+									}
+								},
+								{
+									"class":"maintex",
+									"content":"<h1>Sri Raghavendra Swamy Matha</h1>"
+								},
+								{
+									"class":"mbg",
+									"ximage":{
+										"src":"images/SARVA SEVA.jpg"
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		],
+		"keys":[
+			["request","content","PGX","home",""]
+		]
+	}
+]

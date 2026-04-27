@@ -1,0 +1,106 @@
+[
+ {
+  "inblock":
+  [
+   {
+    "css":{
+       "file":"webres.json",
+       "default":{
+        "h1,h2,h3,h4,h5,h6,p":"3:0px,4:0px",
+        ".layout":"5:relative,3:0px,4:5px,lgrad:45deg|2/3,10:25px,3:5%",
+        ".t-layout":"24:flex,82:center,87:space-between,57:wrap,3:0px 0px 25px 0px",
+        ".t-layout .icon img":"18:50px,45:invert(100%)",
+        ".m-layout":"24:flex,82:center,87:space-between,57:wrap",
+        ".layout .m-layout .l-sm-head":"3:25px 0px",
+        ".layout .m-layout .l-btns":"5:relative,24:flex,82:center",
+        ".layout .m-layout .l-btns .btn":"27:pointer,3:12px 18px,lgrad:0deg|9/7,1:0,42:bold,10:35px",
+        ".layout .m-layout .r-text":"3:15px 0px",
+        ".r-btns":"5:relative,24:flex,82:center,87:right,57:wrap,12:75%",
+        ".r-btns .btn":"0:0,27:pointer,3:7px 10px,2:2px solid 8,10:35px,,4:5px,"
+       },
+       "auto":{
+          "800px":{
+          }
+       },
+       "animation":{
+       }
+    },
+    "class":"layout",
+    "inblock":
+    [
+     {
+      "class":"t-layout",
+      "inblock":
+      [
+       {
+        "class":"icon",
+        "image":{
+         "src":"icons/form.png",
+         "alt":"Image",
+         "longdesc":"Image"
+        }
+       },
+       {
+        "class":"r-btns",
+        "inblock":
+        [
+         {
+          "class":"btn",
+          "content":"Button 1"
+         },
+         {
+          "class":"btn",
+          "content":"Button 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "class":"m-layout",
+      "inblock":
+      [
+       {
+        "class":"l-left",
+        "inblock":
+        [
+         {
+          "class":"l-head",
+          "content":"<h1>Upcoming Events Coming Soon</h1>"
+         },
+         {
+          "class":"l-sm-head",
+          "content":"<h4>Art Class, Bangalore</h4>"
+         },
+         {
+          "class":"l-btns",
+          "inblock":
+          [
+           {
+            "class":"btn",
+            "content":"Register Now"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "class":"l-right",
+        "inblock":
+        [
+         {
+          "class":"r-text",
+          "content":"Total Joined til"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "keys":[
+   
+  ]
+ }
+]

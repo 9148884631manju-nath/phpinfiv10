@@ -1,0 +1,110 @@
+[
+ {
+  "inblock":
+  [
+   {
+    "webres":"webres.json",
+    "block":"root",
+    "css":{
+       "file":"webres.json",
+       "default":{
+        ".body":"24:flex,87:space-between",
+        ".lft":"lgrad:45deg|53/54,5:relative,17:15vw,18:100vh,16:hidden,12:75%",
+        ".rit":"89:1,18:100vh,16:auto",
+        ".lhead":"3:25px 25px 0px 25px,",
+        ".links":"5:relative,3:25px",
+        ".links .itm":"lgrad:0deg|4/2,3:15px,19:1px solid 6,27:pointer,34:0.5s,24:flex,82:center,",
+        ".links .itm:hover":"lgrad:0deg|3/1,",
+        ".links .itm img":"17:25px,3:0px 10px 0px 0px,45:invert(50%)",
+        ".iframe":"5:relative,3:25px",
+        ".rhead":"5:relative,24:flex,82:center,87:space-between,3:15px,19:1px solid 8",
+        ".btns":"5:relative,24:flex,82:center,57:wrap",
+        ".btns .btn":"27:pointer,lgrad:0deg|7/6,1:0,3:5px 8px,10:5px"
+       },
+       "auto":{
+          "800px":{
+          }
+       },
+       "animation":{
+       }
+    }
+   },
+   {
+    "class":"body",
+    "inblock":
+    [
+     {
+    "class":"lft",
+    "inblock":
+    [
+     {
+      "class":"lhead",
+      "content":"<h2>Main Links</h2>"
+     },
+     {
+      "class":"links",
+      "varblock":{
+       "data":[
+        ["1","Logins","9343945143"],
+        ["2","Contact Forms","9148884631"],
+        ["3","Subscribes","0021547855"],
+        ["3","Registers","0021547855"]
+       ],
+       "vars":["SLN","NAM","CON"],
+       "theme":[
+        {
+         "class":"itm",
+         "image":{
+          "src":"icons/form.png",
+          "alt":"TIT",
+          "longdesc":"TIT"
+         },
+         "content":"<h3>NAM</h3>"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "class":"rit",
+    "inblock":
+    [
+     {
+      "class":"rhead",
+      "inblock":
+      [
+       {
+        "class":"logo",
+        "content":"<h2>Forms</h2>"
+       },
+       {
+        "class":"btns",
+        "inblock":
+        [
+         {
+          "class":"btn",
+          "content":"Home",
+          "attr":{
+            "onclick":"window.location='./'"
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "class":"iframe",
+      "xcontent":"<h4>Result Here.</h4>",
+      "block":"Forms/Logins"
+     }
+    ]
+   }
+    ]
+   }
+  ],
+  "keys":[
+   ["request","type","$type","",""]
+  ]
+ }
+]
